@@ -32,7 +32,7 @@ func resourceKongRoute() *schema.Resource {
 				Elem:     &schema.Schema{Type: schema.TypeString},
 			},
 			"methods": {
-				Type:     schema.TypeList,
+				Type:     schema.TypeSet,
 				Optional: true,
 				ForceNew: false,
 				Elem:     &schema.Schema{Type: schema.TypeString},
